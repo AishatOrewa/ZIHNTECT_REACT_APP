@@ -1,40 +1,22 @@
-function Features() {
+import FeatureCard from "./FeatureCard";
+
+export default function Features() {
   return (
-    <div className="space-y-6">
-      {/* Bootcamps & Learning  */}
-      <div className="p-6 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition">
-        <h3 className="text-xl font-bold text-gray-900 mb-2">
-          GTD Academy & Bootcamps
-        </h3>
-        <p className="text-gray-600 text-sm">
-          Accelerate your career with immersive frontend, backend, and DevOps
-          tracks led by global engineering mentors.
+    <section id="services" className="py-20 px-4 max-w-7xl mx-auto">
+      <div className="text-center mb-16">
+        <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+          End-to-End Enterprise Tech Solutions
+        </h2>
+        <p className="mt-4 text-gray-600 max-w-xl mx-auto text-sm">
+          Explore how GTD scales talent development, infrastructure hosting, and
+          service delivery across the globe.
         </p>
       </div>
-
-      {/* Cloud Hosting */}
-      <div className="p-6 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition">
-        <h3 className="text-xl font-bold text-gray-900 mb-2">
-          Secure Cloud Hosting
-        </h3>
-        <p className="text-gray-600 text-sm">
-          Deploy applications instantly with our high-availability cloud cluster
-          networks, optimized for speed and production scales.
-        </p>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <FeatureCard />
+        <FeatureCard />
+        <FeatureCard />
       </div>
-
-      {/*Job Placement */}
-      <div className="p-6 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition">
-        <h3 className="text-xl font-bold text-gray-900 mb-2">
-          Global Job Placements
-        </h3>
-        <p className="text-gray-600 text-sm">
-          We connect our certified bootcamp grads directly with vetted remote
-          tech opportunities across North America and Europe.
-        </p>
-      </div>
-    </div>
+    </section>
   );
 }
-
-export default Features;
