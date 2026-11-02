@@ -8,7 +8,7 @@ export default function Footer() {
         </div>
         <div className="text-xs">
           &copy; {currentYear} GTD Inc. Project built for Zihntech Academy
-          Cohort 01. All rights reserved.
+          Cohort 01 by AishatOrewa. All rights reserved.
         </div>
       </div>
     </footer>
